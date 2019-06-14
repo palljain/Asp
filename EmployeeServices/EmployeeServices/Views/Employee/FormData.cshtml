@@ -1,0 +1,101 @@
+﻿@model EmployeesData.Employee
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <!-- <script>
+        $(document).ready(function () {
+            $("#submit").click(function () {
+                var Firstname = $("#Firstname").val();
+                var Lastname = $("#Lastname").val();
+                var Gender = $("#Gender").val();
+                var salary = $("#salary").val();
+                var Password = $("#Passwd").val();
+
+                $.ajax({
+                        url: 'InsertData',
+                        method: 'POST',
+                        format: 'json',
+                        data: {Firstname:Firstname,Lastname:Lastname,Gender:Gender,salary:salary,Password:Password },
+                        success: function (data) {
+                            alert("Data Inserted");
+                        }
+                    });
+              });
+        });
+    </script>   -->
+</head>
+
+<h2>Create</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>Employee</h4>
+        <hr />
+        @Html.ValidationSummary(true)
+        @*@Html.Hidden("ID")*@
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Firstname, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.Firstname, null, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.Firstname, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Lastname, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.Lastname, null, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.Lastname, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Gender, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+               Male: @Html.RadioButtonFor(m => m.Gender, "Male", true)
+               Female: @Html.RadioButtonFor(m => m.Gender, "Female", false)
+               @Html.ValidationMessageFor(m => m.Gender, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.salary, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.salary, null, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.salary, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Passwd, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.PasswordFor(m => m.Passwd)
+                @Html.ValidationMessageFor(m => m.Passwd, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default"  />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+
+
+
+

@@ -1,0 +1,11 @@
+C:\Users\Win-0065\Documents\Visual Studio 2015\Projects\EmployeeServices\EmployeesData\bin\Debug\EmployeesData.dll
+C:\Users\Win-0065\Documents\Visual Studio 2015\Projects\EmployeeServices\EmployeesData\bin\Debug\EmployeesData.pdb
+C:\Users\Win-0065\Documents\Visual Studio 2015\Projects\EmployeeServices\EmployeesData\bin\Debug\EntityFramework.dll
+C:\Users\Win-0065\Documents\Visual Studio 2015\Projects\EmployeeServices\EmployeesData\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Win-0065\Documents\Visual Studio 2015\Projects\EmployeeServices\EmployeesData\bin\Debug\EntityFramework.xml
+C:\Users\Win-0065\Documents\Visual Studio 2015\Projects\EmployeeServices\EmployeesData\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Win-0065\Documents\Visual Studio 2015\Projects\EmployeeServices\EmployeesData\obj\Debug\EmployeesData.csprojResolveAssemblyReference.cache
+C:\Users\Win-0065\Documents\Visual Studio 2015\Projects\EmployeeServices\EmployeesData\obj\Debug\EmployeesData.dll
+C:\Users\Win-0065\Documents\Visual Studio 2015\Projects\EmployeeServices\EmployeesData\obj\Debug\EmployeesData.pdb
+C:\Users\Win-0065\Documents\Visual Studio 2015\Projects\EmployeeServices\EmployeesData\bin\Debug\EmployeesData.dll.config
+C:\Users\Win-0065\Documents\Visual Studio 2015\Projects\EmployeeServices\EmployeesData\bin\Debug\Swashbuckle.AspNetCore.dll

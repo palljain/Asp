@@ -1,0 +1,31 @@
+﻿@{ViewBag.Title = "form"; }
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">FirstName</th>
+            <th scope="col">LastName</th>
+            <th scope="col">Gender</th>
+            <th scope="col">Salary</th>
+            <th scope="col">Modification</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var data in ViewBag.ItemData)
+        {
+            <tr>
+                <th scope="row">@data.ID</th>
+                <td>@data.Firstname</td>
+                <td>@data.Lastname</td>
+                <td>@data.Gender</td>
+                <td>@data.salary</td>
+                <td><a href="Employee/Edit/@data.ID">Edit</a> / <a href="Delete">Delete</a></td>
+
+           </tr>
+        }
+    </tbody>
+</table>

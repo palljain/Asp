@@ -1,0 +1,10 @@
+C:\Users\Win-0065\Documents\Visual Studio 2015\Projects\EmployeeServices\EmployeesDataAccess\bin\Release\EmployeesDataAccess.dll.config
+C:\Users\Win-0065\Documents\Visual Studio 2015\Projects\EmployeeServices\EmployeesDataAccess\bin\Release\EmployeesDataAccess.dll
+C:\Users\Win-0065\Documents\Visual Studio 2015\Projects\EmployeeServices\EmployeesDataAccess\bin\Release\EmployeesDataAccess.pdb
+C:\Users\Win-0065\Documents\Visual Studio 2015\Projects\EmployeeServices\EmployeesDataAccess\bin\Release\EntityFramework.dll
+C:\Users\Win-0065\Documents\Visual Studio 2015\Projects\EmployeeServices\EmployeesDataAccess\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Win-0065\Documents\Visual Studio 2015\Projects\EmployeeServices\EmployeesDataAccess\bin\Release\EntityFramework.xml
+C:\Users\Win-0065\Documents\Visual Studio 2015\Projects\EmployeeServices\EmployeesDataAccess\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Win-0065\Documents\Visual Studio 2015\Projects\EmployeeServices\EmployeesDataAccess\obj\Release\EmployeesDataAccess.csprojResolveAssemblyReference.cache
+C:\Users\Win-0065\Documents\Visual Studio 2015\Projects\EmployeeServices\EmployeesDataAccess\obj\Release\EmployeesDataAccess.dll
+C:\Users\Win-0065\Documents\Visual Studio 2015\Projects\EmployeeServices\EmployeesDataAccess\obj\Release\EmployeesDataAccess.pdb

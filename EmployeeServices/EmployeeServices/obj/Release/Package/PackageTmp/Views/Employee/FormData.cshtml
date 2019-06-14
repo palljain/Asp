@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "FormData";
+}
+
+<h2>FormData</h2>
+
+<html>
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script>
+        function validateForm() {
+            var salary = document.forms["myForm"]["salary"].value;
+            if (salary > 5000) {
+                document.getElementById("error").innerHTML = "Salary must not exceed 5000";
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <form name="myForm" action="InsertData" onsubmit="return validateForm();" method ="post">
+        FirstName: <input type="text" name="Firstname" id="Firstname"><br /><br />
+        LastName: <input type="text" name="Lastname" id="Lastname"><br /><br />
+        Gneder <input type="text" name="Gender" id="Gender"><br /><br /> 
+        Salary: <input type="text"name="salary" id="salary"><br /><br />
+        <div id="error"></div>
+        Password: <input type="password" name="Password" id="Password"><br /><br />
+
+        <input type="submit" value="Submit" id="submit">
+    </form>
+</body>
+</html>

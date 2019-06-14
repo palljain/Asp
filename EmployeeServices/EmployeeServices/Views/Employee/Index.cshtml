@@ -1,0 +1,70 @@
+﻿
+@{ViewBag.Title = "form"; }
+
+<!-- <input type="button" id="button" value="Show Employee"> -->
+<table class="table" id="DataTable">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">FirstName</th>
+            <th scope="col">LastName</th>
+            <th scope="col">Gender</th>
+            <th scope="col">Salary</th>
+            <th scope="col">Modification</th>
+        </tr>
+    </thead>
+    <tbody id="show">
+    </tbody>
+</table>
+<div id="ShowText"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $.getJSON("/Employee/Getdata", function (response) {
+           var s="";
+            for(var i=0; i<response.length; i++)
+                {
+                    var id = response[i].ID;
+                    s += "<tr>" +
+                      "<td>" + response[i].ID + "</td>" +
+                      "<td>" + response[i].Firstname +"</td>" +
+                      "<td>"+ response[i].Lastname +"</td>" +
+                      "<td>"+ response[i].Gender +"</td>" +
+                      "<td>" + response[i].salary + "</td>" +
+                      "<td>" + "<a href='Employee/Edit?id= "+id+"'>Edit</a> / <a href='Employee/Delete?id="+id+"'>Delete</a>" + "</td>" +
+                      "</tr>";
+            }
+            $("#show").html(s);
+
+        });
+          
+
+             //   $.ajax({
+             //       url: "/Employee/Getdata",
+             //       method: "GET",
+             //       contentType: "JSON",
+             //       success: function (data) {
+            //            var s = "";
+            //            for (var i=0; i < data.length; i++)
+            //            {
+            //                var id = data[i].ID;
+            //                s += "<tr>" +
+            //                  "<td>" + data[i].ID + "</td>" +
+            //                  "<td>" + data[i].Firstname +"</td>" +
+            //                  "<td>"+ data[i].Lastname +"</td>" +
+            //                  "<td>"+ data[i].Gender +"</td>" +
+            //                  "<td>" + data[i].salary + "</td>" +
+             //                 "<td>" + "<a href='Employee/Edit?id= "+id+"'>Edit</a> / <a href='Employee/Delete?id="+id+"'>Delete</a>" + "</td>" +
+            //                  "</tr>";
+            //            }
+            //            $("#show").html(s);
+            //        },
+           //         error: function () {
+           //             alert("Failed! Please try again.");
+           //         }
+           //     });
+       //     });
+        });
+</script>
